@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#content {
+    position: relative;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#content>h1,
+#content>p {
+    background-color: black;
+    color: white;
+    padding: 0.5rem 0;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    background-color: black;
+    padding: 0.5rem 0;
+    width: 100%;
+    justify-content: center;
+}
+
+button {
+    background-color: black;
+    font-size: 1.3rem;
+    color: white;
+    padding: 0.2rem 0.4rem;
+    margin: 0 0.4rem;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.active {
+    background-color: white;
+    color: black;
+}
+
+#content::after {
+    content: "";
+    background-image: url("https://images.pexels.com/photos/262897/pexels-photo-262897.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.tab-content {
+    padding: 2rem;
+    margin: 3rem;
+    font-size: 1.5rem;
+    backdrop-filter: blur(15px);
+}
